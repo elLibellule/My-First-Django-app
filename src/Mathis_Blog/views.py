@@ -6,5 +6,5 @@ from django.shortcuts import render
 
 
 def index(request):
-    now_in_paris = datetime.now(tz=ZoneInfo("Europe/Paris"))
+    now_in_paris = datetime.now()
     return render(request, "Mathis_Blog/index.html", context={"date": now_in_paris})
