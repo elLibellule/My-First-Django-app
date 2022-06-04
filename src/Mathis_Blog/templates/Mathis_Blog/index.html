@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'css/logo.png' %}" />
+</head>
+<body>
+    <div class="container">
+        <h1>Hello and Welcome on my first Django website</h1>
+        <h2>Today we are {{ date|date:"d F Y" }}</h2>
+        <h3>It's currently {{ date|date:"H\hi" }}</h3>
+        <p>Mathis AKA ellibellule </p>
+    </div>
+</body>
+</html>
